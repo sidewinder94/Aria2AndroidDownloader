@@ -3,7 +3,8 @@
  */
 package me.uni.antoinealizarrouk.aria2androiddownloader.menus;
 
-import android.app;
+import me.uni.antoinealizarrouk.aria2androiddownloader.R;
+import android.view.MenuItem;
 
 /**
  * @author Antoine-Ali
@@ -18,8 +19,14 @@ public class Main {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void exit()
+	static public boolean applyMenuChoice(MenuItem item)
 	{
+		switch(item.getItemId())
+		{
+			case R.menu.main:
+				
+		}
+		return false;
 		
 	}
 
