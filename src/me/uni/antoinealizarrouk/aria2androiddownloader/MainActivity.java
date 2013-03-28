@@ -3,7 +3,6 @@ package me.uni.antoinealizarrouk.aria2androiddownloader;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.*;
-import me.uni.antoinealizarrouk.aria2androiddownloader.menus.Main;
 
 public class MainActivity extends Activity {
 
@@ -25,8 +24,18 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item)
 	{
-		return (Main.applyMenuChoice(item) || 
-				super.onOptionsItemSelected(item));
+		switch(item.getItemId())
+		{
+			case R.id.action_exit:
+				finish();
+			
+			case R.id.action_settings:
+				//Affichage de l'activité de paramètres
+			
+			default:
+				return super.onOptionsItemSelected(item);
+				
+		}
 	}
 	
 }
