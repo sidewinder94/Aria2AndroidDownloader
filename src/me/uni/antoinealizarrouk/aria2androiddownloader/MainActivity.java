@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 				finish();
 				break;
 			case R.id.action_settings:
-				startActivityForResult(new Intent(getApplicationContext(), SettingsActivity.class), 0);
+				startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
 				break;				
 		}
 		return super.onOptionsItemSelected(item);
