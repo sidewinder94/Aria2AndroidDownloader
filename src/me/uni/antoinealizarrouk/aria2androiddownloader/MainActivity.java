@@ -2,6 +2,7 @@ package me.uni.antoinealizarrouk.aria2androiddownloader;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.*;
 
 public class MainActivity extends Activity {
@@ -28,14 +29,12 @@ public class MainActivity extends Activity {
 		{
 			case R.id.action_exit:
 				finish();
-			
+				break;
 			case R.id.action_settings:
-				//Affichage de l'activité de paramètres
-			
-			default:
-				return super.onOptionsItemSelected(item);
-				
+				startActivityForResult(new Intent(getApplicationContext(), SettingsActivity.class), 0);
+				break;				
 		}
+		return super.onOptionsItemSelected(item);
 	}
 	
 }
