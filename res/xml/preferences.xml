@@ -13,19 +13,19 @@
 		        android:key="pref_key_host"
 		        android:summary="@string/pref_summary_host"
 		        android:title="@string/pref_title_host"
-		        android:defaultValue=""/>
+		        android:defaultValue="localhost"/>
 		    <EditTextPreference 
 		        android:dependency="pref_key_remote"
 		        android:key="pref_key_port"
 		        android:summary="@string/pref_summary_port"
 		        android:title="@string/pref_title_port"
-		        android:defaultValue=""/>
+		        android:defaultValue="6800"/>
 		    <CheckBoxPreference 
 		        android:dependency="pref_key_remote"
 		        android:key="pref_key_encryption"
 		        android:summary="@string/pref_summary_encryption"
 		        android:title="@string/pref_title_encryption"
-		        android:defaultValue=""/>
+		        android:defaultValue="false"/>
 		    <EditTextPreference 
 		        android:dependency="pref_key_remote"
 		        android:key="pref_key_username"

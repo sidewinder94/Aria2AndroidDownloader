@@ -2,11 +2,22 @@
 <resources>
 
     <string name="app_name">Aria2AndroidDownloader</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Paramètres</string>
     <string name="exit">Quitter</string>
-	<string name="pref_connection_title">Paramètres de Connexion</string>
+	<string name="pref_connection_title">Connexion Settings</string>
 	<string name="title_settings_activity">Paramètres</string>
-	<string name="pref_download_settings">Préférences de téléchargement</string>
+    <string name="pref_download_settings">Paramètres de Téléchargements</string>
+    <string name="pref_title_remote">Distant</string>
+    <string name="pref_title_host">Serveur</string>
+    <string name="pref_title_port">Port</string>
+    <string name="pref_title_encryption">Encrypter</string>
+    <string name="pref_title_username">Nom d\'utilisateur</string>
+    <string name="pref_title_password">Mot de Passe</string>
+    <string name="pref_summary_remote">Activez ceci si vous voulez contrôler un serveur distant</string>
+    <string name="pref_summary_host">L\'adresse ou l\'IP du serveur sur lequel tourne aria2</string>
+    <string name="pref_summary_port">Le port écouté par aria2 sur le serveur</string>
+    <string name="pref_summary_encryption">Activez l\'encryption pour les données envoyées/reçues. Si cette fonctionnalité n\'est pas activée sur le serveur la connexion échouera</string>
+    <string name="pref_summary_username">Le nom d\'utilisateur sur le serveur</string>
+    <string name="pref_summary_password">Le mot de passe sur le serveur</string>
     
 </resources>

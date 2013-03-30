@@ -3,7 +3,7 @@
 
     <string name="app_name">Aria2AndroidDownloader</string>
     <string name="action_settings">Settings</string>
-    <string name="exit">Quitter</string>
+    <string name="exit">Exit</string>
 	<string name="pref_connection_title">Connection Settings</string>
 	<string name="title_settings_activity">Settings</string>
     <string name="pref_download_settings">Download Settings</string>
