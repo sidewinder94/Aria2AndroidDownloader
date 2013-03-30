@@ -5,5 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="exit">Quitter</string>
-
+	<string name="pref_connection_title">Paramètres de Connexion</string>
+	<string name="title_settings_activity">Paramètres</string>
+	<string name="pref_download_settings">Préférences de téléchargement</string>
+    
 </resources>

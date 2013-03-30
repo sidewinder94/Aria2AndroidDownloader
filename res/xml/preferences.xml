@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-    
-
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+	        android:key="pref_key_remote"
+	        android:summary="@string/pref_summary_remote"
+	        android:title="@string/pref_title_remote"
+	        android:defaultValue="true" />
+		<PreferenceCategory 
+		    android:title="@string/pref_connection_title"
+		    android:key="pref_key_connection_settings">"
+		    <EditTextPreference 
+		        android:dependency="pref_key_remote"
+		        android:key="pref_key_host"
+		        android:summary="@string/pref_summary_host"
+		        android:title="@string/pref_title_host"
+		        android:defaultValue=""/>
+		    <EditTextPreference 
+		        android:dependency="pref_key_remote"
+		        android:key="pref_key_port"
+		        android:summary="@string/pref_summary_port"
+		        android:title="@string/pref_title_port"
+		        android:defaultValue=""/>
+		    <CheckBoxPreference 
+		        android:dependency="pref_key_remote"
+		        android:key="pref_key_encryption"
+		        android:summary="@string/pref_summary_encryption"
+		        android:title="@string/pref_title_encryption"
+		        android:defaultValue=""/>
+		    <EditTextPreference 
+		        android:dependency="pref_key_remote"
+		        android:key="pref_key_username"
+		        android:summary="@string/pref_summary_username"
+		        android:title="@string/pref_title_username"
+		        android:defaultValue=""/>
+		    <EditTextPreference 
+		        android:dependency="pref_key_remote"
+		        android:key="pref_key_password"
+		        android:summary="@string/pref_summary_password"
+		        android:title="@string/pref_title_password"
+		        android:inputType="textPassword"
+		        android:defaultValue=""/>	        
+	</PreferenceCategory>
+	<PreferenceCategory 
+	    android:title="@string/pref_download_settings"
+	    android:key="pref_key_download_settings">
+	</PreferenceCategory>
 </PreferenceScreen>

@@ -3,7 +3,20 @@
 
     <string name="app_name">Aria2AndroidDownloader</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="exit">Quitter</string>
-
+	<string name="pref_connection_title">Connection Settings</string>
+	<string name="title_settings_activity">Settings</string>
+    <string name="pref_download_settings">Download Settings</string>
+    <string name="pref_title_remote">Remote</string>
+    <string name="pref_title_host">Host</string>
+    <string name="pref_title_port">Port</string>
+    <string name="pref_title_encryption">Encryption</string>
+    <string name="pref_title_username">Username</string>
+    <string name="pref_title_password">Password</string>
+    <string name="pref_summary_remote">Enable this if you want to connect to a remote server</string>
+    <string name="pref_summary_host">The name or IP of the server aria2 run on</string>
+    <string name="pref_summary_port">The port aria2 listen on the remote server</string>
+    <string name="pref_summary_encryption">Enable encrytion for the data send/received. If this isn\'t enabled on the remote server connection will fail</string>
+    <string name="pref_summary_username">The username you defined on the remote server</string>
+    <string name="pref_summary_password">The password you defined on the remote server</string>
 </resources>

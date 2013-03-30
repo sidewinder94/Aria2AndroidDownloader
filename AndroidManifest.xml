@@ -21,6 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+			android:name="me.uni.antoinealizarrouk.aria2androiddownloader.SettingsActivity"
+			android:label="@string/title_settings_activity"
+			android:parentActivityName="me.uni.antoinealizarrouk.aria2androiddownloader.MainActivity" >
+				<meta-data
+					android:name="android.support.PARENT_ACTIVITY"
+					android:value="me.uni.antoinealizarrouk.aria2androiddownloader.MainActivity" />
+		</activity>
+        
     </application>
 
 </manifest>
