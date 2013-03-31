@@ -4,7 +4,7 @@
 	        android:key="pref_key_remote"
 	        android:summary="@string/pref_summary_remote"
 	        android:title="@string/pref_title_remote"
-	        android:defaultValue="true" />
+	        android:defaultValue="false" />
 		<PreferenceCategory 
 		    android:title="@string/pref_connection_title"
 		    android:key="pref_key_connection_settings">"
