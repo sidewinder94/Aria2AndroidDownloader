@@ -2,11 +2,14 @@
 <resources>
 
     <string name="app_name">Aria2AndroidDownloader</string>
+    <!-- Menu Strings -->
     <string name="action_settings">Settings</string>
     <string name="exit">Exit</string>
+    <!-- Settings Activity -->
+    <string name="title_settings_activity">Settings</string>
 	<string name="pref_connection_title">Connection Settings</string>
-	<string name="title_settings_activity">Settings</string>
     <string name="pref_download_settings">Download Settings</string>
+    <!-- Connection Settings -->
     <string name="pref_title_remote">Remote</string>
     <string name="pref_title_host">Host</string>
     <string name="pref_title_port">Port</string>
@@ -19,4 +22,14 @@
     <string name="pref_summary_encryption">Enable encrytion for the data send/received. If this isn\'t enabled on the remote server connection will fail</string>
     <string name="pref_summary_username">The username you defined on the remote server</string>
     <string name="pref_summary_password">The password you defined on the remote server</string>
+    <!-- Download Settings Menus-->
+    <string name="advanced_settings">Advanced Settings</string>
+    <string name="basic_settings">Basic Settings</string>
+    <string name="FTP_specific_settings">FTP Specific Settings</string>
+    <string name="HTTP_FTP_settings">HTTP/FTP Settings</string>
+    <string name="HTTP_specific_settings">HTTP Specific Settings</string>
+    <string name="metalink_specific_settings">Metalink Specific settings</string>
+    <string name="torrent_metalink_settings">Torrent/Metalink Settings</string>
+    <string name="torrent_specific_settings">Torrent Specific Settings</string>
+    
 </resources>

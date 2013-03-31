@@ -43,5 +43,55 @@
 	<PreferenceCategory 
 	    android:title="@string/pref_download_settings"
 	    android:key="pref_key_download_settings">
+		<PreferenceScreen 
+		    android:key="button_basic_settings_category_key"
+        	android:title="@string/basic_settings"
+        	android:persistent="false">	    
+		</PreferenceScreen>
+		
+		<PreferenceScreen 
+		    android:key="button_HTTP_FTP_settings_category_key"
+        	android:title="@string/HTTP_FTP_settings"
+        	android:persistent="false">
+        	
+		    <PreferenceScreen 
+		    	android:key="button_HTTP_specific_settings_category_key"
+        		android:title="@string/HTTP_specific_settings"
+        		android:persistent="false">	    
+			</PreferenceScreen>
+			
+		    <PreferenceScreen 
+		    	android:key="button_FTP_specific_settings_category_key"
+        		android:title="@string/FTP_specific_settings"
+        		android:persistent="false">	    
+			</PreferenceScreen>
+		    
+		</PreferenceScreen>   
+		 
+		<PreferenceScreen 
+		    android:key="button_torrent_metalink_settings_category_key"
+        	android:title="@string/torrent_metalink_settings"
+        	android:persistent="false">
+		    
+		    <PreferenceScreen 
+		    	android:key="button_torrent_specific_settings_category_key"
+        		android:title="@string/torrent_specific_settings"
+        		android:persistent="false">	    
+			</PreferenceScreen>
+		    
+		    <PreferenceScreen 
+		    	android:key="button_metalink_specific_settings_category_key"
+        		android:title="@string/metalink_specific_settings"
+        		android:persistent="false">	    
+			</PreferenceScreen>	    
+		    
+		</PreferenceScreen>   
+		 
+		<PreferenceScreen 
+		    android:key="button_advanced_settings_category_key"
+        	android:title="@string/advanced_settings"
+        	android:persistent="false">	    
+		</PreferenceScreen>    
+	    
 	</PreferenceCategory>
 </PreferenceScreen>

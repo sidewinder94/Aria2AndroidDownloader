@@ -8,7 +8,8 @@ import android.preference.PreferenceActivity;
 
 /**
  * @author Antoine-Ali
- *
+ * We are here using PreferenceActivity because we're targeting all devices from 2.2 (API8) to 4.2 (API17)
+ * and we're only using simple parameters
  */
 public class SettingsActivity extends PreferenceActivity {
 

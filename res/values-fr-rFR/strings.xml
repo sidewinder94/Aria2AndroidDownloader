@@ -1,23 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Aria2AndroidDownloader</string>
+    <!-- Menu Strings -->
     <string name="action_settings">Paramètres</string>
     <string name="exit">Quitter</string>
-	<string name="pref_connection_title">Connexion Settings</string>
-	<string name="title_settings_activity">Paramètres</string>
-    <string name="pref_download_settings">Paramètres de Téléchargements</string>
+    <!-- Settings Activity -->
+    <string name="title_settings_activity">Paramètres</string>
+	<string name="pref_connection_title">Paramètres de Connexion</string>
+    <string name="pref_download_settings">Paramètres de Téléchargement</string>
+    <!-- Connection Settings -->
     <string name="pref_title_remote">Distant</string>
     <string name="pref_title_host">Serveur</string>
     <string name="pref_title_port">Port</string>
-    <string name="pref_title_encryption">Encrypter</string>
+    <string name="pref_title_encryption">Encryption</string>
     <string name="pref_title_username">Nom d\'utilisateur</string>
     <string name="pref_title_password">Mot de Passe</string>
-    <string name="pref_summary_remote">Activez ceci si vous voulez contrôler un serveur distant</string>
-    <string name="pref_summary_host">L\'adresse ou l\'IP du serveur sur lequel tourne aria2</string>
-    <string name="pref_summary_port">Le port écouté par aria2 sur le serveur</string>
-    <string name="pref_summary_encryption">Activez l\'encryption pour les données envoyées/reçues. Si cette fonctionnalité n\'est pas activée sur le serveur la connexion échouera</string>
-    <string name="pref_summary_username">Le nom d\'utilisateur sur le serveur</string>
-    <string name="pref_summary_password">Le mot de passe sur le serveur</string>
+    <string name="pref_summary_remote">Activez ceci si vous voulez vous connecter à un serveur distant</string>
+    <string name="pref_summary_host">L\'adresse ou l\'IP du serveur distant</string>
+    <string name="pref_summary_port">Le port qu\'aria2 écoute sur le serveur distant</string>
+    <string name="pref_summary_encryption">Activer l\'encryption des donnée envoyées/reçues. Si cette option n\'est pas activée sur le serveur la connexion échouera.</string>
+    <string name="pref_summary_username">Le nom d\'utilisateur defini pour aria2 sur le serveur</string>
+    <string name="pref_summary_password">Le mot de passe defini pour aria2 sur le serveur</string>
+    <!-- Download Settings Menus-->
+    <string name="advanced_settings">Paramètres Avancés</string>
+    <string name="basic_settings">Paramètres de Base</string>
+    <string name="FTP_specific_settings">Paramètres spécifiques FTP</string>
+    <string name="HTTP_FTP_settings">Paramètres HTTP/FTP</string>
+    <string name="HTTP_specific_settings">Paramètres spécifiques HTTP</string>
+    <string name="metalink_specific_settings">Paramètres spécifiques Metalink</string>
+    <string name="torrent_metalink_settings">Paramètres Torrent/Metalink</string>
+    <string name="torrent_specific_settings">Paramètres spécifiques Torrent</string>
     
 </resources>
