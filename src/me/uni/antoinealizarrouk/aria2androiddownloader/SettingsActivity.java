@@ -5,6 +5,7 @@ package me.uni.antoinealizarrouk.aria2androiddownloader;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.widget.*;
 
 /**
  * @author Antoine-Ali
@@ -20,4 +21,13 @@ public class SettingsActivity extends PreferenceActivity {
 		super.onCreate(savedInstaceState);
 		addPreferencesFromResource(R.xml.preferences);
 	}
+	@Override
+	public void onBackPressed()
+	{
+		super.onBackPressed();
+		// TODO Update aria2 running config
+		Toast toast = Toast.makeText(getApplicationContext(), "Back", Toast.LENGTH_SHORT);
+		toast.show();
+	}
+	
 }
