@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+	
+    <string name="aria2_version">1.16.5</string>
     <string name="app_name">Aria2AndroidDownloader</string>
     <!-- Menu Strings -->
     <string name="action_settings">Settings</string>
