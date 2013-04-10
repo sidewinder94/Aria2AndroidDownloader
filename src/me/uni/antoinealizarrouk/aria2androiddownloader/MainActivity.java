@@ -16,6 +16,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		// TODO Import aria2 binairies into the project and launch it with the saved parameters
+		// http://stackoverflow.com/questions/5583487/hosting-an-executable-within-android-application 
+		// http://gimite.net/en/index.php?Run%20native%20executable%20in%20Android%20App
 	}
 	
 	@Override
