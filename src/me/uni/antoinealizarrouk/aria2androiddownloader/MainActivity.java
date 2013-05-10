@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.*;
 import android.widget.Toast;
 import me.uni.antoinealizarrouk.aria2androiddownloader.background.*;
@@ -17,7 +18,7 @@ import me.uni.antoinealizarrouk.aria2androiddownloader.background.*;
 public class MainActivity extends Activity {
 	 private BackgroundProcess background;
 	 public boolean work;
-
+	 public static String tag = "MainActivity";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,11 +27,12 @@ public class MainActivity extends Activity {
 		//Trying to open the version file describing the aria2 installed version
 		try
 		{
-			String filePath = context.getFilesDir().getPath() + context.getPackageName();
+			String filePath = context.getFilesDir().getPath();
 			String fileName = "version.txt";
 			File version = new File(filePath,fileName);
 			if (version.exists())
 			{
+				Log.i(tag, "Found a version file");
 				//Reading the file content if existing
 				FileInputStream fis = new FileInputStream(version);
 				byte[] buffer = new byte[fis.available()];
@@ -38,7 +40,7 @@ public class MainActivity extends Activity {
 				fis.close();
 				fis = null;
 				String versionString = new String(buffer);
-				if (versionString != getString(R.string.aria2_version));
+				if (versionString != getString(R.string.aria2_version))// TODO : Comparison problem
 				{
 					/*If the version contained in the file is not equal to the one in the app 
 					 * copy the new version of aria2
@@ -46,7 +48,13 @@ public class MainActivity extends Activity {
 					FileOutputStream fos = new FileOutputStream(version);
 					fos.write(getString(R.string.aria2_version).getBytes());
 					fos.close();
-					copyAria(fileName, filePath);
+					Log.v(tag, "We have a different aria2 executable");
+					Log.i(tag, "Copying new aria2 executable");
+					copyAria("aria2", filePath);
+				}
+				else
+				{
+					Log.v(tag, "The version is the same");
 				}
 				
 			}
@@ -56,12 +64,12 @@ public class MainActivity extends Activity {
 				FileOutputStream fos = new FileOutputStream(version);
 				fos.write(getString(R.string.aria2_version).getBytes());
 				fos.close();
-				copyAria(fileName, filePath);
+				copyAria("aria2", filePath);
 			}
 		}
 		catch (IOException exception)
 		{
-			//TODO Handle Exception
+			Log.e(tag, "Couldn't access a file", exception);
 		}
 		//Aria2 is in the right folder ready to be executed
 		
@@ -117,8 +125,10 @@ public class MainActivity extends Activity {
 		// TODO shut down aria2
 	}
 	
-	private boolean copyAria(String fileName, String filePath)
+	private boolean copyAria(String fileName, String directory)
 	{
+		Log.v(tag, "Starting the copying procedure");
+		String filePath = directory + "/" + fileName;
 		try
 		{
 			Context context = getApplicationContext();
@@ -127,15 +137,19 @@ public class MainActivity extends Activity {
 			ins.read(buffer);
 			ins.close();
 			ins = null;
-			FileOutputStream fos = context.openFileOutput(filePath + fileName, Context.MODE_PRIVATE);
+			FileOutputStream fos = context.openFileOutput(fileName, Context.MODE_PRIVATE);
 			fos.write(buffer);
 			fos.close();
-			Process process = Runtime.getRuntime().exec("/system/bin/chmod 744 " + filePath + fileName);
+			Log.i(tag, "Succeeded to copy aria2 file");
+			Process process = Runtime.getRuntime().exec("/system/bin/chmod 744 " + filePath);
+			Log.v(tag, "Making aria2 executable");
 			process.waitFor();
+			Log.i(tag, "Succeeded to make aria2 executable");
 			return true;
 		}
 		catch (Exception e)
 		{
+			Log.e(tag, "Failed to copy or made executable aria2 file", e);
 			return false;
 		}
 	}
