@@ -18,7 +18,7 @@ import me.uni.antoinealizarrouk.aria2androiddownloader.background.*;
 public class MainActivity extends Activity {
 	 private BackgroundProcess background;
 	 public boolean work;
-	 public static String tag = "MainActivity";
+	 public static String TAG = "MainActivity";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 			File version = new File(filePath,fileName);
 			if (version.exists())
 			{
-				Log.i(tag, "Found a version file");
+				Log.i(TAG, "Found a version file");
 				//Reading the file content if existing
 				FileInputStream fis = new FileInputStream(version);
 				byte[] buffer = new byte[fis.available()];
@@ -48,13 +48,13 @@ public class MainActivity extends Activity {
 					FileOutputStream fos = new FileOutputStream(version);
 					fos.write(getString(R.string.aria2_version).getBytes());
 					fos.close();
-					Log.v(tag, "We have a different aria2 executable");
-					Log.i(tag, "Copying new aria2 executable");
+					Log.d(TAG, "We have a different aria2 executable");
+					Log.i(TAG, "Copying new aria2 executable");
 					copyAria("aria2", filePath);
 				}
 				else
 				{
-					Log.v(tag, "The version is the same");
+					Log.d(TAG, "The version is the same");
 				}
 				
 			}
@@ -69,7 +69,7 @@ public class MainActivity extends Activity {
 		}
 		catch (IOException exception)
 		{
-			Log.e(tag, "Couldn't access a file", exception);
+			Log.e(TAG, "Couldn't access a file", exception);
 		}
 		//Aria2 is in the right folder ready to be executed
 		
@@ -127,7 +127,7 @@ public class MainActivity extends Activity {
 	
 	private boolean copyAria(String fileName, String directory)
 	{
-		Log.v(tag, "Starting the copying procedure");
+		Log.d(TAG, "Starting the copying procedure");
 		String filePath = directory + "/" + fileName;
 		try
 		{
@@ -140,16 +140,16 @@ public class MainActivity extends Activity {
 			FileOutputStream fos = context.openFileOutput(fileName, Context.MODE_PRIVATE);
 			fos.write(buffer);
 			fos.close();
-			Log.i(tag, "Succeeded to copy aria2 file");
+			Log.i(TAG, "Succeeded to copy aria2 file");
 			Process process = Runtime.getRuntime().exec("/system/bin/chmod 744 " + filePath);
-			Log.v(tag, "Making aria2 executable");
+			Log.d(TAG, "Making aria2 executable");
 			process.waitFor();
-			Log.i(tag, "Succeeded to make aria2 executable");
+			Log.i(TAG, "Succeeded to make aria2 executable");
 			return true;
 		}
 		catch (Exception e)
 		{
-			Log.e(tag, "Failed to copy or made executable aria2 file", e);
+			Log.e(TAG, "Failed to copy or made executable aria2 file", e);
 			return false;
 		}
 	}
