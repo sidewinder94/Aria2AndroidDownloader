@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Download Preferences -->
 	<PreferenceCategory 
 	    android:title="@string/pref_download_settings"
 	    android:key="pref_key_download_settings">
 		<PreferenceScreen 
 		    android:key="button_basic_settings_category_key"
         	android:title="@string/basic_settings"
-        	android:persistent="false">	    
+        	android:persistent="false">
+        	
+	       	<EditTextPreference
+	        	android:key="pref_key_dir"
+	        	android:summary="@string/pref_summary_directory"
+	        	android:title="@string/pref_title_directory"
+	        	android:defaultValue=""/><!-- TODO : Find the good one -->
+		    	    
+		   	<EditTextPreference 
+		   	    android:key="pref_key_concurrent"
+		   	    android:summary="@string/pref_summary_concurrent"
+		   	    android:title="@string/pref_title_concurrent"
+		   	    android:defaultValue="5"/>
+		   	
+		   	<CheckBoxPreference 
+		   	    android:key="pref_key_integrity"
+		   	    android:title="@string/pref_title_integrity"
+		   	    android:defaultValue="false"/>
 		</PreferenceScreen>
 		
 		<PreferenceScreen 
@@ -54,6 +72,8 @@
 		</PreferenceScreen>    
 	    
 	</PreferenceCategory>
+	
+	<!-- Connection Preferences -->
 	<PreferenceCategory 
 	    android:title="@string/pref_connection_title"
 	    android:key="pref_key_connection_settings">"

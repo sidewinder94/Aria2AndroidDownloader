@@ -32,6 +32,16 @@
     <string name="metalink_specific_settings">Metalink Specific settings</string>
     <string name="torrent_metalink_settings">Torrent/Metalink Settings</string>
     <string name="torrent_specific_settings">Torrent Specific Settings</string>
+    <!-- Basic Settings -->
+    <string name="pref_title_directory">Directory</string>
+    <string name="pref_summary_directory">Where the downloaded files will be stored</string>
+    <string name="pref_title_concurrent">Concurrent Downloads</string>
+    <string name="pref_summary_concurrent">Number of parallel downloads</string>
+    <string name="pref_title_integrity">Integrity Check</string>
+    
+        
+    
+    <!-- Debug Items -->
     <string-array name="default_current_download">
         <item >A Movie</item>
         <item >A Music</item>
