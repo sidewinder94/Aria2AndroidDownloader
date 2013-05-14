@@ -41,6 +41,10 @@ public class MainActivity extends Activity {
 				fis = null;
 				String versionString = new String(buffer);
 				
+				/**
+				 * @author Maxence Winandy <maxence.winandy@gmail.com>
+				 * Comparaison avec les fonctions native de Java.
+				 */
 				if (versionString.compareTo(getString(R.string.aria2_version)) != 0  )
 				{
 					/* If the version contained in the file is not equal to the one in the app 
