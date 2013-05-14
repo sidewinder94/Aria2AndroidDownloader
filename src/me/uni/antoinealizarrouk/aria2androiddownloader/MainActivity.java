@@ -40,9 +40,10 @@ public class MainActivity extends Activity {
 				fis.close();
 				fis = null;
 				String versionString = new String(buffer);
-				if (versionString != getString(R.string.aria2_version))// TODO : Comparison problem
+				
+				if (versionString.compareTo(getString(R.string.aria2_version)) != 0  )
 				{
-					/*If the version contained in the file is not equal to the one in the app 
+					/* If the version contained in the file is not equal to the one in the app 
 					 * copy the new version of aria2
 					 */
 					FileOutputStream fos = new FileOutputStream(version);
