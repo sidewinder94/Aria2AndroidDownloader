@@ -32,5 +32,11 @@
     <string name="metalink_specific_settings">Metalink Specific settings</string>
     <string name="torrent_metalink_settings">Torrent/Metalink Settings</string>
     <string name="torrent_specific_settings">Torrent Specific Settings</string>
+    <string-array name="default_current_download">
+        <item >A Movie</item>
+        <item >A Music</item>
+        <item >A Game</item>
+        <item >A Book</item>
+    </string-array>
     
 </resources>
