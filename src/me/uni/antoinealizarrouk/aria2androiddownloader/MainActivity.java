@@ -15,6 +15,10 @@ import android.view.*;
 import android.widget.Toast;
 import me.uni.antoinealizarrouk.aria2androiddownloader.background.*;
 
+/**
+ * @author Antoine-Ali Zarrouk <antoineali.zarrouk@viacesi.fr>
+ *  
+ */
 public class MainActivity extends Activity {
 	 private BackgroundProcess background;
 	 public boolean work;

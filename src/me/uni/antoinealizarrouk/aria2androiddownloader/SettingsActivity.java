@@ -8,7 +8,7 @@ import android.preference.PreferenceActivity;
 import android.widget.*;
 
 /**
- * @author Antoine-Ali
+ * @author Antoine-Ali Zarrouk <antoineali.zarrouk@viacesi.fr>
  * We are here using PreferenceActivity because we're targeting all devices from 2.2 (API8) to 4.2 (API17)
  * and we're only using simple parameters
  */

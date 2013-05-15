@@ -6,7 +6,7 @@ package me.uni.antoinealizarrouk.aria2androiddownloader.background;
 import android.widget.Toast;
 import me.uni.antoinealizarrouk.aria2androiddownloader.*;
 /**
- * @author Antoine-Ali
+ * @author Antoine-Ali Zarrouk <antoineali.zarrouk@viacesi.fr>
  *
  */
 public class BackgroundProcess extends Thread {
