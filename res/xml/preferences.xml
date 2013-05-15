@@ -90,10 +90,11 @@
 			   	    android:title="@string/pref_title_remote_time"
 			   	    android:summary="@string/pref_summary_remote_time"
 			   	    android:defaultValue="false"/>
-			   	<EditTextPreference 
+			   	<CheckBoxPreference 
 			   	    android:key="pref_key_reuse"
 			   	    android:title="@string/pref_title_reuse"
-			   	    android:summary="@string/pref_summary_reuse"/>
+			   	    android:summary="@string/pref_summary_reuse"
+			   	    android:defaultValue="false"/>
 			   	<EditTextPreference 
 			   	    android:key="pref_key_retry_wait"
 			   	    android:title="@string/pref_title_retry_wait"
