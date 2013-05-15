@@ -39,14 +39,16 @@
     <string name="pref_summary_concurrent">Number of parallel downloads</string>
     <string name="pref_title_integrity">Integrity Check</string>
     <!-- HTTP/FTP Common options -->
+    <string name="pref_title_Advanced">Advanced Settings</string>
+    <string name="pref_title_Basic">Basic Settings</string>
     <string name="pref_title_all_proxy">All Proxy</string>
     <string name="pref_summary_all_proxy">Use this proxy server for all protocols</string>
     <string name="pref_title_all_user">All Proxy User</string>
     <string name="pref_summary_all_user">Sets the username to use with the "All Proxy" option</string>
     <string name="pref_title_all_passwd">All Proxy Password</string>
     <string name="pref_summary_all_passwd">Sets the password to use with the "All Proxy" option</string>
-    <string name="pref_title_timeout">Connection Timeout</string>
-    <string name="pref_summary_timeout">Set the connect timeout in seconds to establish a connection to the HTTP/FTP/Proxy server</string>
+    <string name="pref_title_connection_timeout">Connection Timeout</string>
+    <string name="pref_summary_connection_timeout">Set the connect timeout in seconds to establish a connection to the HTTP/FTP/Proxy server</string>
     <string name="pref_title_max_connections">Max. Connection Per Server</string>
     <string name="pref_summary_max_conections">The maximum number of connections to one server for each download Default : 1</string>
     <string name="pref_title_tries">Max Tries</string>
