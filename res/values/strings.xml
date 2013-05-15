@@ -38,9 +38,37 @@
     <string name="pref_title_concurrent">Concurrent Downloads</string>
     <string name="pref_summary_concurrent">Number of parallel downloads</string>
     <string name="pref_title_integrity">Integrity Check</string>
-    
-        
-    
+    <!-- HTTP/FTP Common options -->
+    <string name="pref_title_all_proxy">All Proxy</string>
+    <string name="pref_summary_all_proxy">Use this proxy server for all protocols</string>
+    <string name="pref_title_all_user">All Proxy User</string>
+    <string name="pref_summary_all_user">Sets the username to use with the "All Proxy" option</string>
+    <string name="pref_title_all_passwd">All Proxy Password</string>
+    <string name="pref_summary_all_passwd">Sets the password to use with the "All Proxy" option</string>
+    <string name="pref_title_timeout">Connection Timeout</string>
+    <string name="pref_summary_timeout">Set the connect timeout in seconds to establish a connection to the HTTP/FTP/Proxy server</string>
+    <string name="pref_title_max_connections">Max. Connection Per Server</string>
+    <string name="pref_summary_max_conections">The maximum number of connections to one server for each download Default : 1</string>
+    <string name="pref_title_tries">Max Tries</string>
+    <string name="pref_summary_tries">Set number of tries 0 means unlimited</string>
+    <string name="pref_title_min_split">Min Split Size</string>
+    <string name="pref_summary_min_split">Aria2 will try to split the downloaded files by that size</string>
+    <string name="pref_title_proxy_method">Proxy Method</string>
+    <string name="pref_summary_proxy_method">Set the method to use in proxy request method Default : get</string>
+    <string name="pref_title_remote_time">Remote Time</string>
+    <string name="pref_summary_remote_time">Retrieve timestamp from the remote server</string>
+    <string name="pref_title_reuse">Reuse URIs</string>
+    <string name="pref_summary_reuse">Reuse already used URIs if no unused are left</string>
+    <string name="pref_title_retry_wait">Retry Wait</string>
+    <string name="pref_summary_retry_wait">Set the seconds to wait between retries Default : 0</string>
+    <string name="pref_title_timeout">Timeout</string>
+    <string name="pref_summary_timeout">Set timeout in seconds Default : 60</string>
+    <!-- HTTP Specific options -->   
+    <!-- Arrays -->
+    <string-array name="array_proxy_method_values">
+        <item>get</item>
+        <item>tunnel</item>
+    </string-array>
     <!-- Debug Items -->
     <string-array name="default_current_download">
         <item >A Movie</item>
